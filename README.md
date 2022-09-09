@@ -1,1 +1,1 @@
-# java-architecture
+# example java architecture
