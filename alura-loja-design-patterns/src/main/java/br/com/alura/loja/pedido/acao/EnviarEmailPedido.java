@@ -1,2 +1,0 @@
-package br.com.alura.loja.pedido.acao;public class EnviarEmailPedido {
-}
