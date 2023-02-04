@@ -1,4 +1,4 @@
-package br.com.alura.rh.service;
+package br.com.alura.rh.service.reajuste;
 
 import br.com.alura.rh.model.Funcionario;
 
@@ -20,6 +20,5 @@ public class ReajusteService {
         BigDecimal salarioReajustado = funcionario.getSalario().add(aumento);
         funcionario.atualizaSalario(salarioReajustado);
     }
-
 
 }
