@@ -3,10 +3,11 @@ package com.alura.loja.patterns.estruturais.loja;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-import br.com.alura.loja.pedido.GeraPedido;
-import br.com.alura.loja.pedido.GeraPedidoHandler;
-import br.com.alura.loja.pedido.acoes.CriarPedidoNoBanco;
-import br.com.alura.loja.pedido.acoes.EnviarPedidoPorEmail;
+import com.alura.loja.patterns.estruturais.loja.pedido.GeraPedido;
+import com.alura.loja.patterns.estruturais.loja.pedido.GeraPedidoHandler;
+import com.alura.loja.patterns.estruturais.loja.pedido.acoes.CriarPedidoNoBanco;
+import com.alura.loja.patterns.estruturais.loja.pedido.acoes.EnviarPedidoPorEmail;
+import com.alura.loja.patterns.estruturais.loja.pedido.acoes.LogDePedido;
 
 public class TestesPedidos {
 
@@ -16,9 +17,10 @@ public class TestesPedidos {
 		int quantidadeItens = 3;
 		
 		GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
-		GeraPedidoHandler handler = new GeraPedidoHandler(Arrays.asList(
+		GeraPedidoHandler handler = new  GeraPedidoHandler(Arrays.asList(
 				new EnviarPedidoPorEmail(),
-				new CriarPedidoNoBanco()));
+				new CriarPedidoNoBanco(),
+				new LogDePedido()));
 		handler.executar(gerador);
 	}
 

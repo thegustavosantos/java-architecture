@@ -2,7 +2,7 @@ package com.alura.loja.patterns.estruturais.loja.pedido;
 
 import java.time.LocalDateTime;
 
-import br.com.alura.loja.orcamento.Orcamento;
+import com.alura.loja.patterns.estruturais.loja.orcamento.Orcamento;
 
 public class Pedido {
 

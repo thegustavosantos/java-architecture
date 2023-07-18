@@ -2,8 +2,8 @@ package com.alura.loja.patterns.estruturais.loja.orcamento.situacao;
 
 import java.math.BigDecimal;
 
-import br.com.alura.loja.DomainException;
-import br.com.alura.loja.orcamento.Orcamento;
+import com.alura.loja.patterns.estruturais.loja.DomainException;
+import com.alura.loja.patterns.estruturais.loja.orcamento.Orcamento;
 
 public class Aprovado extends SituacaoOrcamento {
 

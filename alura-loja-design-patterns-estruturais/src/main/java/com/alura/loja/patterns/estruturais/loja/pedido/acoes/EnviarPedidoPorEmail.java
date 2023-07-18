@@ -1,6 +1,6 @@
 package com.alura.loja.patterns.estruturais.loja.pedido.acoes;
 
-import br.com.alura.loja.pedido.Pedido;
+import com.alura.loja.patterns.estruturais.loja.pedido.Pedido;
 
 public class EnviarPedidoPorEmail implements AcaoAposGerarPedido {
 	
