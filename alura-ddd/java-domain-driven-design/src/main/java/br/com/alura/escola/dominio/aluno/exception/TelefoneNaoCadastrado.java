@@ -1,13 +1,13 @@
 package br.com.alura.escola.dominio.aluno.exception;
 
-import br.com.alura.escola.dominio.aluno.CPF;
+import br.com.alura.escola.dominio.aluno.Telefone;
 
-public class AlunoNaoEncontrado extends RuntimeException {
+public class TelefoneNaoCadastrado extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 
-	public AlunoNaoEncontrado(CPF cpf) {
-		super("Aluno nao encontrado com CPF: " + cpf.getNumero());
+	public TelefoneNaoCadastrado(String message) {
+		super(message);
 	}
 
 }
