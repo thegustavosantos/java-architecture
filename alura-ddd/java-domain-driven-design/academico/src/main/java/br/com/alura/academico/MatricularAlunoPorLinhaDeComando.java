@@ -2,7 +2,7 @@ package br.com.alura.academico;
 
 import br.com.alura.academico.aplicacao.aluno.matricular.MatricularAluno;
 import br.com.alura.academico.aplicacao.aluno.matricular.MatricularAlunoDto;
-import br.com.alura.academico.dominio.PublicadorDeEventos;
+import br.com.alura.shared.dominio.eventos.PublicadorDeEventos;
 import br.com.alura.academico.dominio.aluno.LogDeAlunoMatriculado;
 import br.com.alura.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 

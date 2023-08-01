@@ -2,7 +2,7 @@ package br.com.alura.academico.aplicacao.aluno.matricular;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.com.alura.academico.dominio.PublicadorDeEventos;
+import br.com.alura.shared.dominio.eventos.PublicadorDeEventos;
 import br.com.alura.academico.dominio.aluno.LogDeAlunoMatriculado;
 import br.com.alura.shared.dominio.CPF;
 import org.junit.jupiter.api.Test;

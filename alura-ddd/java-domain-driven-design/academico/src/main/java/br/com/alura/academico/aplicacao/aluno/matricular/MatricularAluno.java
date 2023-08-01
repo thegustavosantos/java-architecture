@@ -1,6 +1,6 @@
 package br.com.alura.academico.aplicacao.aluno.matricular;
 
-import br.com.alura.academico.dominio.PublicadorDeEventos;
+import br.com.alura.shared.dominio.eventos.PublicadorDeEventos;
 import br.com.alura.academico.dominio.aluno.Aluno;
 import br.com.alura.academico.dominio.aluno.AlunoMatriculado;
 import br.com.alura.academico.dominio.aluno.RepositorioDeAlunos;
