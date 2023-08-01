@@ -1,6 +1,7 @@
 package br.com.alura.gamificacao.dominio.selo;
 
-import br.com.alura.academico.dominio.aluno.CPF;
+
+import br.com.alura.shared.dominio.CPF;
 
 import java.util.List;
 

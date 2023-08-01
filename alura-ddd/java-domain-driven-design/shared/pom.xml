@@ -9,14 +9,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>academico</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>br.com.alura</groupId>
-            <artifactId>shared</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+    <artifactId>shared</artifactId>
 
 </project>

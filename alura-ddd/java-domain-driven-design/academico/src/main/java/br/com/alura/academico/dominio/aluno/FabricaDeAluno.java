@@ -1,5 +1,7 @@
 package br.com.alura.academico.dominio.aluno;
 
+import br.com.alura.shared.dominio.CPF;
+
 public class FabricaDeAluno {
 	
 	private Aluno aluno;

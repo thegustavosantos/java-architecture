@@ -5,8 +5,8 @@ import java.util.List;
 
 import br.com.alura.academico.dominio.aluno.Aluno;
 import br.com.alura.academico.dominio.aluno.exception.AlunoNaoEncontrado;
-import br.com.alura.academico.dominio.aluno.CPF;
 import br.com.alura.academico.dominio.aluno.RepositorioDeAlunos;
+import br.com.alura.shared.dominio.CPF;
 
 public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 

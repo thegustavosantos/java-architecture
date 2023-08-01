@@ -1,8 +1,8 @@
 package br.com.alura.gamificacao.infra.selo;
 
-import br.com.alura.academico.dominio.aluno.CPF;
 import br.com.alura.gamificacao.dominio.selo.RepositorioDeSelos;
 import br.com.alura.gamificacao.dominio.selo.Selo;
+import br.com.alura.shared.dominio.CPF;
 
 import java.util.ArrayList;
 import java.util.List;

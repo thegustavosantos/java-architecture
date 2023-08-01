@@ -9,6 +9,7 @@
     <modules>
 		<module>academico</module>
 		<module>gamificacao</module>
+		<module>shared</module>
 	</modules>
 
     <dependencies>

@@ -1,6 +1,7 @@
 package br.com.alura.academico.dominio.aluno;
 
 import br.com.alura.academico.dominio.aluno.exception.TelefoneNaoCadastrado;
+import br.com.alura.shared.dominio.CPF;
 
 import java.util.ArrayList;
 import java.util.List;

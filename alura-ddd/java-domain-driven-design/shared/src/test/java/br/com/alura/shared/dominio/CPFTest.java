@@ -1,7 +1,8 @@
-package br.com.alura.academico.dominio.aluno;
+package br.com.alura.shared.dominio;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import br.com.alura.shared.dominio.CPF;
 import org.junit.jupiter.api.Test;
 
 class CPFTest {

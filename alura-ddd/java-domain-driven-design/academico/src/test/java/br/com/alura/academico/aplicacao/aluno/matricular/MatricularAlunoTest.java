@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import br.com.alura.academico.dominio.PublicadorDeEventos;
 import br.com.alura.academico.dominio.aluno.LogDeAlunoMatriculado;
+import br.com.alura.shared.dominio.CPF;
 import org.junit.jupiter.api.Test;
 
 import br.com.alura.academico.dominio.aluno.Aluno;
-import br.com.alura.academico.dominio.aluno.CPF;
 import br.com.alura.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 
 class MatricularAlunoTest {
