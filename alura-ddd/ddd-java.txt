@@ -1,0 +1,127 @@
+ddd-java
+
+Java e Domain Driven Design: apresentando os conceitos
+
+Livros: 
+    - Domain Driven Design (Eric Evans)
+    - Implementing Domain-Driven Design (Vaughn Vernon)
+    - Domain-Driven Design Distilled (Vaughn Vernon)
+    - Domain Driven Design with Spring Boot (Ajay Kumar)
+
+Links:
+    - https://maiconheck.medium.com/domain-driven-design-os-building-blocks-parte-3-domain-subdomains-e-bounded-contexts-a51d5a9d9851
+
+
+================================================================================================================================================
+
+DDD
+
+    Características:
+        - Desenvolver o software orientado a domínio
+        - Como deveria ser? (Funcionalidades)
+            Ficha cadastral do paciente
+            Solicitação de exames médicos 
+            Consulta de laudos
+            Busca de paciente pelo CPF
+            Impressão de receitas
+        - Como é? (Tecnologias)
+            - Padrão MVC
+            - Requisições assíncronas
+            - Data Access Object (DAO)
+            - Spring Boot
+            - Ajax com JQuery
+            - Identidade visual
+        - Principais conceitos do DDD:
+            - Foco no domínio
+            - Linguagem Ubíqua
+            - Contexto delimitado
+            - Bloco de construção
+    
+    Linguagem Ubíqua
+        - Junção entre tecnologia e negócio
+        - Deve refletir nas classes/atributos do projeto que representa o domínio do negócio
+        - Sempre conversar utilizando os termos dos domínios da aplicação
+        - Espec téc e Espec neg consigam conversar da mesma forma 
+    
+    Dicas:
+        - Projeto com DDD incluindo separação de domínios, contextos, é mais interessante para projetos grandes
+        - Se a ideia é fazer simplesmente um crud, talvez essa não seja a melhor abordagem
+        - Usar mensageria pra desacoplar os domínios
+
+
+================================================================================================================================================
+        
+Aula 01: Linguagem Ubíqua
+
+    Nesta aula:
+        - Aprendemos que os estudos de Clean Architecture e DDD geralmente se complementam;
+        - Entendemos o que é DDD;
+        - Vimos que diversos conceitos de DDD já foram aprendidos no curso de Clean Architecture;
+        - Conhecemos o termo Linguagem Ubíqua que consiste em ter uma linguagem onipresente entre a equipe de desenvolvimento e a equipe de negócios.
+
+================================================================================================================================================
+
+Aula 02: Aggregates
+
+    Aggregator Root
+        - Classe que controla insert ou delete dos seus agregados, o root quem garante a integridade
+            Ex.: Um telefone ou email não existe se um alunor existir
+                    Logo é a classe de domínio rica do aluno que tem a regra de cadastros desses.
+        - Persistencia do agregado
+            - Fazer todo acesso pelo "aggregate root" nesse caso o aluno
+            - Grava, deleta, altera pelo repositório do aluno pra não ter inconsistência
+
+    Nesta aula:
+        - Conhecemos o conceito de Aggregates;
+        - Entendemos o que é uma invariante;
+        - Vimos que persistência de Aggregates é um assunto complexo, pois envolve infraestrutura.
+
+    ================================================================================================================================================
+
+Aula 03: Eventos
+
+    Eventos
+        - Atividades e Ações pode ser disparada a partir de um evento realizado. 
+        - Tem um ouvinte que a partir da escuta pode fazer algo
+        - Desacoplar o código
+
+    Nesta aula:
+        - Definimos o que é um evento;
+        - Entendemos o que é um evento de domínio;
+        - Aprendemos a implementar, emitir e reagir a um evento de domínio.
+
+================================================================================================================================================
+
+Aula 04: Contextos delimitados (Bounded Contexts)
+
+    Contextos:
+        - Separação dos contextos ex.: Aluno e Selos
+
+    Bounded Contexts:
+        - Contextos delimitados, são um dos conceitos mais complexos de entender e implementar do estudo do DDD.
+        - Artigo sobre : https://martinfowler.com/bliki/BoundedContext.html
+    
+    Nesta aula:
+        - Conhecemos o conceito de Bounded Contexts ou Contextos Delimitados;
+        - Vimos que a separação em contextos nos dá mais flexibilidade porém aumenta (e muito) a complexidade;
+        - Conhecemos o desenho conhecido como Mapa de Contexto.
+
+================================================================================================================================================
+
+Aula 05: Contexto compartilhado (Shared Kernel)
+
+    Nesta aula:
+        - Entendemos que os contextos devem ser independentes, mas precisam se comunicar de alguma forma;
+        - Conhecemos o conceito de Shared Kernel, e vimos que há vantagens e desvantagens;
+        - Utilizamos eventos de domínio para realizar parte da comunicação entre contextos;
+        - Vimos que cada contexto pode fornecer seus Use Cases de forma independente.
+
+================================================================================================================================================
+
+Aula 06: Camada Anticorrupção
+
+    Nesta aula:
+        - Conversamos sobre o que é um sistema distribuído;
+        - Vimos que através de contextos delimitados podemos distribuir sistemas realmente complexos;
+        - No caso de sistemas distribuídos, falamos que há a necessidade de uma camada anti-corrupção;
+        -Vimos algumas referências para nos aprofundar no assunto de DDD.
